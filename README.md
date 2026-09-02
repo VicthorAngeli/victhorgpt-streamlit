@@ -8,7 +8,6 @@ Com ele, explorei como integrar a API da OpenAI a uma interface feita com Stream
 
 - Interface de chat criada com Streamlit
 - Integração com um modelo da OpenAI por meio do LangChain
-- Histórico de mensagens durante a sessão
 - Configuração de credenciais por variável de ambiente
 - Limite de tamanho das mensagens e de requisições por minuto
 

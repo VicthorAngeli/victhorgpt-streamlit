@@ -12,7 +12,12 @@ def abrir_chat(prompt, modelo, mensagens):
 
     if prompt:
         mensagens.append(HumanMessage(content=prompt))
-        resposta = modelo.invoke(mensagens)
+        try:
+            resposta = modelo.invoke(mensagens)
+        except Exception:
+            st.error("Não foi possível consultar a OpenAI. Verifique sua chave no arquivo .env.")
+            return
+
         mensagens.append(resposta)
         st.session_state["mensagens"] = mensagens
 

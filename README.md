@@ -43,6 +43,8 @@ Chatbot simples construído com Streamlit, LangChain e a API da OpenAI.
    streamlit run chat.py
    ```
 
+O chatbot aceita mensagens de até 1.000 caracteres e limita cada sessão a 5 requisições por minuto para reduzir consumo acidental da API.
+
 ## Segurança
 
 Nunca publique sua chave da OpenAI, o arquivo `.env` ou a pasta `.venv`. O arquivo `.env.example` é apenas um modelo e não contém credenciais.

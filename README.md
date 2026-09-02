@@ -1,6 +1,18 @@
 # VicthorGPT
 
-Chatbot simples construído com Streamlit, LangChain e a API da OpenAI.
+Este é um projeto que desenvolvi para transformar o uso da inteligência artificial em uma solução prática: um chatbot simples, funcional e acessível pelo navegador.
+
+Com ele, explorei como integrar a API da OpenAI a uma interface feita com Streamlit e como organizar o histórico de uma conversa usando LangChain. Também incluí cuidados básicos para evitar o uso acidental ou excessivo da API.
+
+## O que este projeto demonstra
+
+- Interface de chat criada com Streamlit
+- Integração com um modelo da OpenAI por meio do LangChain
+- Histórico de mensagens durante a sessão
+- Configuração de credenciais por variável de ambiente
+- Limite de tamanho das mensagens e de requisições por minuto
+
+Este repositório contém o código-fonte para estudo e reprodução local. A chave da OpenAI não está incluída.
 
 ## Tecnologias
 
@@ -11,7 +23,13 @@ Chatbot simples construído com Streamlit, LangChain e a API da OpenAI.
 
 ## Como executar localmente
 
-1. Clone este repositório e entre na pasta do projeto.
+1. Clone este repositório e entre na pasta do projeto:
+
+   ```powershell
+   git clone https://github.com/VicthorAngeli/victhorgpt-streamlit.git
+   cd victhorgpt-streamlit
+   ```
+
 2. Crie um ambiente virtual:
 
    ```powershell
@@ -43,7 +61,7 @@ Chatbot simples construído com Streamlit, LangChain e a API da OpenAI.
    streamlit run chat.py
    ```
 
-O chatbot aceita mensagens de até 1.000 caracteres e limita cada sessão a 5 requisições por minuto para reduzir consumo acidental da API.
+O chatbot aceita mensagens de até 1.000 caracteres e limita cada sessão a 5 requisições por minuto para reduzir o consumo acidental da API.
 
 ## Segurança
 

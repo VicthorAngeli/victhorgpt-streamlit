@@ -62,9 +62,3 @@ Este repositório contém o código-fonte para estudo e reprodução local. A ch
    ```
 
 O chatbot aceita mensagens de até 1.000 caracteres e limita cada sessão a 5 requisições por minuto para reduzir o consumo acidental da API.
-
-## Segurança
-
-Nunca publique sua chave da OpenAI, o arquivo `.env` ou a pasta `.venv`. O arquivo `.env.example` é apenas um modelo e não contém credenciais.
-
-Se uma chave for exposta, revogue-a imediatamente no painel da OpenAI e crie outra.
